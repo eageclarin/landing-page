@@ -1,4 +1,138 @@
-.body {
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+#top, #bottom {
+    color: white;
+    background-color: #1f2937;
+}
+
+#top, #middle1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+#top #header, #top #body {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 25px;
+}
+
+#top #body .left p, #middle3 .alert .text p:nth-child(2) {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 80px;
+}
+
+#top div {
+    flex: 1;
+}
+#top #header .logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+    display: flex;
+    justify-content: flex-start;
+}
+#top #header .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+#top #body {
+    padding-bottom: 60px;
+}
+#top #body .left {
+    width: 40%;
+    padding-right: 10px;
+}
+#top #body .left span {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+#top #body .right {
+    width: 60%;
+}
+
+#middle1 span {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-top: 30px;
+}
+#middle1 .info-container {
+    display: flex;
     align-content: center;
-    width: 100%;
+    justify-content: center;
+    width: 60%;
+    padding-bottom: 60px;
+    text-align: center;
+}
+#middle1 .info-container .info img {
+    border-color: #3882f6;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+#middle1 .info-container .info p {
+    font-size: 18px;
+}
+
+#middle2 {
+    background-color: #e5e7eb;
+    padding: 150px 20% 150px 20%;
+}
+#middle2 p:nth-child(1) {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 0;
+}
+#middle2 p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: right;
+}
+
+#middle3 {
+    padding: 100px 15% 100px 15%;
+}
+#middle3 .alert {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+    padding: 50px 10% 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#middle3 .alert .text p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+#middle3 .alert button {
+    border: 1px solid white;
+}
+
+#bottom {
+    text-align: center;
+    padding: 30px;
+}
+#bottom span {
+    width: 70%;
 }
